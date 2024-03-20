@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--Form
+    type:text, password, email,date, color, radio, checkbox, number, dropdowns, file, submit-->
+    <h1>HTML Form</h1>
+    <form action="get">
+        <label for="Username">Username:</label>
+        <input type="text" id="Username"/><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required/><br>
+
+        <label for="number">Phone Number:</label>
+        <input type="number" id="number" max="5" min="1"/><br>
+
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email"/><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" value="male" name="gender" />Male
+        <input type="radio" value="female" name="gender"/>Female<br>
+
+        <label for="hobby">Hobbies:</label>
+        <input type="checkbox" value="movie">Movie
+        <input type="checkbox" value="sport">Sport
+        <input type="checkbox" value="song">Song
+        <br>
+
+        <label>Select Country:</label>
+        <select>
+            <option value="usa">USA</option>
+            <option value="India">India</option>
+            <option value="aus">Australia</option>
+        </select>
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="10" placeholder="Enter your comments" disabled></textarea><br>
+
+        <label for="country"> Select Game:</label>
+        <input type="text" name="country" id="country" list="countries">
+        <datalist id="countries">
+            <option value="c" >Cricket</option>
+            <option value="k">Kho-Kho</option>
+            <option value="ka">Kabaddi</option>
+            <option value="h">Hocky</option>
+        </datalist><br>
+
+        <fieldset >
+            <legend >Other Information:
+
+
+                <label for="file">File:</label>
+        <input type="file"><br>
+
+        <label for="file">Date:</label>
+        <input type="date"><br>
+
+        <label for="file">Color:</label>
+        <input type="color"><br>
+
+        <label for="file">Range:</label>
+        <input type="range"><br>
+            </legend>
+            
+        </fieldset><br>
+
+        
+
+        <label for="file">Time:</label>
+        <input type="time"><br>
+
+        <label for="file">Website URL:</label>
+        <input type="url"><br>
+
+        <label for="file">Search Query:</label>
+        <input type="search"><br>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
